@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+}
+
+.attendTable, th, td{
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    min-width: 70px;
+}
+
+.tableDiv{
+    margin: auto;
+    margin-top: 300px;   
+    text-align: center;
+    max-width: 900px;
+} 
+
+.attendTable{
+    border-collapse: collapse;
+}
+
+.formButton{
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#attendedButton{
+    background-color: rgb(240, 62, 62);
+}
+
+#absentButton{
+    background-color: green;
+}
+
+#lateButton{
+    background-color: gray;
+}
+
+.submitButton{
+    padding: 10px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+    text-justify: center;
+}
