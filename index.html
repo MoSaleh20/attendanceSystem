@@ -8,16 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="pop-up">
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text">
-            <label for="id">id</label>
-            <input type="text" name="id" id="">
-
-        </form>
+    <div class="pop-up" id="pop-up">
+        <div class="pop-up-content">
+            <h2 id="popupTitle">Add new student</h2>
+            <form action="" class="addForm" id="addForm">
+                <div class="inputArea">
+                    <label for="id">Student ID</label>
+                    <input class="entry" type="number" name="" id="id">
+                    <label for="fname">First Name</label>
+                    <input class="entry" type="text" name="" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input class="entry" type="text" name="" id="lname">
+                </div>                
+                <div id="warning">WARNING: adding a student will reset the sheet.</div>
+                <div class="addButtons">
+                    <input type="submit" name="" id="add" value="Add">
+                    <input type="button" name="" id="cancel" value="Cancel">
+                </div>
+            </form>
+        </div>
     </div>
     <div class="tableDiv">
+        <div class="title" id="title">
+            Attendance for
+        </div>
         <form id="attForm" action="">
             <table class="attendTable" id="attendTable">
                 <thead>
@@ -30,9 +44,9 @@
                 </thead>
                 <tbody id="attendTableBody">
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
+                        <td class="entry">1</td>
+                        <td class="entry">191153</td>
+                        <td class="entry">Moath Raba'e</td>
                         <td>
                             <input type="button" class="formButton attendedButton" name="attended" id="attendedButton">
                         </td>
@@ -44,10 +58,10 @@
                         </td>
                     </tr> 
                     <tr>
-                        <td>Alfreds fds</td>
-                        <td>fd Anfdsders</td>
-                        <td>fds</td>
-                        <td>
+                        <td class="entry">2</td>
+                        <td class="entry">171032</td>
+                        <td class="entry">Mohammad Saleh</td>
+                        <td >
                             <input type="button" class="formButton attendedButton" name="attended" id="attendedButton">
                         </td>
                         <td>
@@ -74,7 +88,6 @@
               </div>
         </form>
     </div> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="table2excel.js"></script>
     <script src="script.js"></script>  
 </body>
